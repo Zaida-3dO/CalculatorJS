@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Joda Scientific Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="face">
+        <div class="screen">
+            <input type="text" style="width: 300px; height: 150px;" id="scr" readonly>
+        </div>
+        <div class="content">
+            <p>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="func" id="powr2" onclick="Press('^');Press('2')">x<sup>2</sup></button>
+                        </td>
+                        <td>
+                            <button class="func" id="powry" onclick="Press('^')">x<sup>y</sup></button>
+                        </td>
+                        <td>
+                            <button class="func" id="sine" onclick="Press('sin(')">sin</button>
+                        </td>
+                        <td>
+                            <button class="func" id="cosine" onclick="Press('cos(')">cos</button>
+                        </td>
+                        <td>
+                            <button class="func" id="tangent" onclick="Press('tan(')">tan</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="func" id="exp" onclick="Press('e^')">e<sup>x</sup></button>
+                        </td>
+                        <td>
+                            <button class="func" id="negate" onclick="Press('√(')">&#x0221A;</button>
+                        </td>
+                        <td>
+                            <button class="func" id="arcsin" onclick="Press('sin-l(')">sin<sup>-1</sup></button>
+                        </td>
+                        <td>
+                            <button class="func" id="arccos" onclick="Press('cos-l(')">cos<sup>-1</sup></button>
+                        </td>
+                        <td>
+                            <button class="func" id="arctan" onclick="Press('tan-l(')">tan<sup>-1</sup></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="func" id="log" onclick="Press('log(')">log</button>
+                        </td>
+                        <td>
+                            <button class="func" id="ln" onclick="Press('ln(')">ln</button>
+                        </td>
+                        <td>
+                            <button class="sign" id="clear" onclick='ClearFunction()'>CE</button>
+                        </td>
+                        <td>
+                            <button class="sign" id="shift" onclick='BackSp()'>&#8592;</button>
+                        </td>
+                        <td>
+                            <button class="FSign" id="divide" onclick="Press('÷')">&#247;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="number" id="seven" onclick="Press(7)">7</button>
+                        </td>
+                        <td>
+                            <button class="number" id="eight" onclick="Press(8)">8</button>
+                        </td>
+                        <td>
+                            <button class="number" id="nine" onclick="Press(9)">9</button>
+                        </td>
+                        <td>
+                            <button class="func" id="prcent" onclick="Press('%')">&#37;</button>
+                        </td>
+                        <td>
+                            <button class="FSign" id="multiply" onclick="Press('×')">&#215;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="number" id="four" onclick="Press(4)">4</button>
+                        </td>
+                        <td>
+                            <button class="number" id="five" onclick="Press(5)">5</button>
+                        </td>
+                        <td>
+                            <button class="number" id="six" onclick="Press(6)">6</button>
+                        </td>
+                        <td>
+                            <button class="func" id="fact" onclick="Press('!')">n!</button>
+                        </td>
+                        <td>
+                            <button class="FSign" id="minus" onclick="Press('-')">&#8722;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="number" id="one" onclick="Press(1)">1</button>
+                        </td>
+                        <td>
+                            <button class="number" id="two" onclick="Press(2)">2</button>
+                        </td>
+                        <td>
+                            <button class="number" id="three" onclick="Press(3)">3</button>
+                        </td>
+                        <td>
+                            <button class="func" id="pi" onclick="Press('π')">&#960;</button>
+                        </td>
+                        <td>
+                            <button class="FSign" id="plus" onclick="Press('+')">&#43;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="number" id="zero" onclick="Press(0)">0</button>
+                        </td>
+                        <td>
+                            <button class="number" id="dot" onclick="Press('.')"><b>.</b></button>
+                        </td>
+                        <td>
+                            <button class="func" id="Fbra" onclick="Press('(')">(</button>
+                        </td>
+                        <td>
+                            <button class="func" id="Bbra" onclick="Press(')')">)</button>
+                        </td>
+                        <td>
+                            <button class="FSign" id="Eva" onclick="equals()">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
