@@ -1,12 +1,12 @@
 .face{
     background-color: rgb(56, 1, 1);
     background-size: 60%;
-    height: 600px;
+    height: 500px;
     width: 350px;
     position: relative;
     border-radius: 8px;
     left: 40%;
-    top: 50px;
+    top: 100px;
     border-bottom: 4px solid rgba(0, 0, 0, 0.44);
     border-top: 4px rgba(0, 0, 0, 0.44);
     border-right: 4px solid rgba(0, 0, 0, 0.44);
@@ -76,4 +76,7 @@ button{
     background-color: red;
     border-bottom: 2px solid rgba(0, 0, 0, 0.44);
     border-top: 2px rgba(0, 0, 0, 0.44)
+}
+.blink{
+    background: black;
 }
